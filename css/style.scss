@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+// Variables
+$primary-font: "Rubik", sans-serif;
+$secondary-font: "Playfair Display", serif;
+$white: #fff;
+$black:#1e1e1e;
+$industries-bg: #18302B;
+$clients-bg:#f8f9f9;
+
+// Global styles
+* {
+    font-family: $primary-font;
+}
+
+// Home section
+.home {
+    background-image: url('../img/eoliennes.jpg');
+    background-size: cover;
+    height: 90vh;
+    padding: 20px;
+    padding-left: 150px;
+
+    .home-title h1 {
+        font-family: $secondary-font;
+        color: $white;
+        font-size: 90px;
+        display: flex;
+        width: 50%;
+    }
+
+    .home-button {
+        font-size: 16px;
+        background-color: $white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+// Image container
+.image-container {
+    text-align: center;
+    padding: 7px;
+    .img-mouse {
+        display: inline-block;
+    }
+}
+
+// About section
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 100px;
+
+    .about-title {
+        padding: 40px 10%;
+        font-size: 46px;
+        align-self: flex-start;
+    }
+
+    .about-info,
+    .about-info-reverse {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 1000px;
+
+        .about-info-img {
+            max-width: 40%;
+            height: auto;
+            padding: 35px;
+        }
+
+        .about-info-content {
+            flex: 1;
+        }
+
+        .about-info-title h3 {
+            margin: 0 0 10px;
+            font-size: 40px;
+            padding-bottom: 25px;
+        }
+
+        .about-info-text p {
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+
+    .about-info-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+// Industries section
+.industries {
+    background-color: $industries-bg;
+    color: $white;
+    text-align: center;
+    padding: 50px;
+
+    .industries-info {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .industry-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .industries-icon {
+        width: 50px;
+        height: 50px;
+        background-color: $white;
+        border-radius: 50%;
+        padding: 15px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .industries-text p {
+        margin: 0;
+    }
+}
+
+// Video section
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// Clients section
+.clients {
+    background-color: $clients-bg;
+    color: $white;
+    text-align: center;
+    padding: 50px;
+    color: $black;
+}
