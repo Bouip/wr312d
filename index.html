@@ -1,142 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Exercice 1</title>
+    <link rel="stylesheet" href="styles2.css">
+    <title>WR312 - FIGMA</title>
 </head>
 <body>
     <!-- HOME -->
-    <div class="home">
-
-        <div class="home-title">
-            <h1>We Produce the Legacy of Excellence</h1>
-        </div>
-
-        <button class="home-button">Contact Us</button>
+    <nav class="menu-navigation">
+        <img src="images/compass.png" alt="Logo website" class="menu-navigation__logo">
+        <ul class="menu-navigation__items">
+            <li class="menu-navigation__item menu-navigation__item--active">
+                <a href="#" class="menu-navigation__link">Home</a>
+            </li>
+            <li class="menu-navigation__item">
+                <a href="#" class="menu-navigation__link">Services</a>
+                <img src="images/Dropdown.png" alt="arrow down" class="menu-navigation__dropdown-icon">
+            </li>
+            <li class="menu-navigation__item">
+                <a href="#" class="menu-navigation__link">Industries</a>
+                <img src="images/Dropdown.png" alt="arrow down" class="menu-navigation__dropdown-icon">
+            </li>
+            <li class="menu-navigation__item">
+                <a href="#" class="menu-navigation__link">Portfolio</a>
+            </li>
+            <li class="menu-navigation__item">
+                <a href="#" class="menu-navigation__link">Company</a>
+                <img src="images/Dropdown.png" alt="arrow down" class="menu-navigation__dropdown-icon">
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- BANNER -->
+    <div class="intro-banner">
+        <h1 class="intro-banner__heading">We Produce the Legacy of Excellence</h1>
+        <button class="intro-banner__cta-button intro-banner__cta-button--highlight">Contact us</button>
     </div>
+
 
     <!-- MOUSE -->
-    <div class="image-container">
-        <img src="img/mouse.jpg" alt="" class="img-mouse">
-    </div>
-    
-
-    <!-- ABOUT -->
-    <div class="about">
-        <h2 class="about-title">ABOUT</h2>
-    <div class="about-info">
-        <img src="img/compass.jpg" alt="" class="about-info-img">
-
-        <div class="about-info-content">
-            <div class="about-info-title">
-                <h3>Improvement Through Meaningful Innovation</h3>
-            </div>
-            <div class="about-info-text">
-                <p>Commited to provide superior consultancy and building trusted services through the newest innovations in the industries with consideration for the environment. 
-                    Dedicated to sustainable and economical capacity and value the customer satisfaction. We accomplish great things by working efficiently and with excellence. </p>
-            </div>
-        </div>
-
+    <div class="mouse-container">
+        <img src="images/mouse.png" alt="a computer mouse" class="mouse-container__img">
     </div>
 
 
-    <!-- ABOUT INFO SECOND -->
-    <div class="about-info-reverse">
-        <img src="img/discovery.jpg" alt="" class="about-info-img">
-
-        <div class="about-info-content">
-            <div class="about-info-title">
-                <h3>Integrity, Synergy, Quality and Value</h3>
-            </div>
-            <div class="about-info-text">
-                <p>Conduct through strong standards and transparency. Operate as a cohesive team and collaborate to provide a key to success and pursuit of improvement that our clients expect. We are capable to complete management, consultancy, construction works and consider that understanding and appreciation the client requirements is a real road to success. 
+    <!-- COMPANY -->
+    <div class="company-overview">
+        <h2 class="company-overview__heading">ABOUT</h2>
+        <div class="company-card">
+            <img src="images/building.png" alt="Building" class="company-card__image">
+            <div class="company-card__content">
+                <h3 class="company-card__title">
+                    Improvement Through Meaningful Innovation
+                </h3>
+                <p class="company-card__description">
+                    Commited to provide superior consultancy and building trusted services through the newest innovations in the industries with consideration for the environment. 
+                    Dedicated to sustainable and economical capacity and value the customer satisfaction. We accomplish great things by working efficiently and with excellence.
                 </p>
             </div>
         </div>
-
-    </div>
-
-</div>
-
-    <!-- INDUSTRIES -->
-    <div class="industries">
-        <div class="industries-title">
-            <h2>INDUSTRIES</h2>
-        </div>
     
-        <div class="industries-info">
-            <div class="industry-item">
-                <img src="img/energy.jpg" alt="" class="industries-icon">
-                <div class="industries-text">
-                    <p>Energy</p>
-                </div>
-            </div>
-    
-            <div class="industry-item">
-                <img src="img/construction.png" alt="" class="industries-icon">
-                <div class="industries-text">
-                    <p>Construction</p>
-                </div>
-            </div>
-    
-            <div class="industry-item">
-                <img src="img/port.png" alt="" class="industries-icon">
-                <div class="industries-text">
-                    <p>Port Services</p>
-                </div>
-            </div>
-    
-            <div class="industry-item">
-                <img src="img/info.png" alt="" class="industries-icon">
-                <div class="industries-text">
-                    <p>Information Technology</p>
-                </div>
+        <div class="company-card company-card--reversed">
+            <img src="images/floor.png" alt="interior of a building" class="company-card__image">
+            <div class="company-card__content">
+                <h3 class="company-card__title">
+                    Integrity, Synergy, Quality and Value
+                </h3>
+                <p class="company-card__description">
+                    Conduct through strong standards and transparency. Operate as a cohesive team and collaborate to provide a key to success and pursuit of improvement that our clients expect. We are capable to complete management, consultancy, construction works and consider that understanding and appreciation the client requirements is a real road to success.
+                </p>
             </div>
         </div>
     </div>
     
+   
+    <!-- SECTOR -->
+    <div class="sector-overview">
+        <h2 class="sector-overview__heading">INDUSTRIES</h2>
+        <div class="sector-overview__content">
+            <div class="sector-overview__card">
+                <img src="images/bolt.png" alt="energy icon" class="sector-overview__card-image">
+                <p class="sector-overview__card-text">Energy</p>
+            </div>
+            <div class="sector-overview__card">
+                <img src="images/construction.png" alt="construction icon" class="sector-overview__card-image">
+                <p class="sector-overview__card-text">Construction</p>
+            </div>
+            <div class="sector-overview__card">
+                <img src="images/port.png" alt="port services icon" class="sector-overview__card-image">
+                <p class="sector-overview__card-text">Port services</p>
+            </div>
+            <div class="sector-overview__card">
+                <img src="images/it.png" alt="information tech icon" class="sector-overview__card-image">
+                <p class="sector-overview__card-text">Information technology</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- VIDEO -->
     <div class="video">
-        <img src="img/video.jpg" alt="">
+        <img src="images/video.png" alt="video of a building" class="video__image">
     </div>
 
-    <!-- CLIENTS -->
-    <div class="clients">
-        <div class="clients-title">
-            <h2>What Clients Say</h2>
-        </div>
 
-        <div class="clients-subtitle">
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        </div>
+    <!-- TESTIMONIALS -->
+<div class="testimonials">
+    <h2 class="testimonials__title">WHAT CLIENTS SAY</h2>
+    <p class="testimonials__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
-        <div class="clients-content">
-            <img src="img/annette.jpg" alt="" class="clients-picture">
-            <h3 class="clients-name">Annette Black</h3>
-            <p class="clients-description">Head officer</p>
-            <p class="clients-comment">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <img src="img/logo.jpg" alt="" class="clients-logo">
-        </div>
+    <div class="people">
+        <div class="person">
+            <div class="person__details">
+                <img src="images/annette.png" alt="Anette picture" class="person__photo">
+                <p class="person__full-name">Annette Black</p>
+                <p class="person__job-title">Head Officer</p>
+            </div>
 
-        <div class="clients-content">
-            <img src="img/jacob.jpg" alt="" class="clients-picture">
-            <h3 class="clients-name">Jacob Jones</h3>
-            <p class="clients-description">Head officer</p>
-            <p class="clients-comment">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <img src="img/logo.jpg" alt="" class="clients-logo">
+            <p class="person__feedback">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <img src="images/logocard.png" alt="Logocard" class="person__company-logo">
         </div>
+        <div class="person">
+            <div class="person__details">
+                <img src="images/jacob.png" alt="jacob picture" class="person__photo">
+                <p class="person__full-name">Jacob Jones</p>
+                <p class="person__job-title">Head Officer</p>
+            </div>
 
-        <div class="clients-content">
-            <img src="img/leslie.jpg" alt="" class="clients-picture">
-            <h3 class="clients-name">Leslie Alexander</h3>
-            <p class="clients-description">Head officer</p>
-            <p class="clients-comment">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <img src="img/logo.jpg" alt="" class="clients-logo">
+            <p class="person__feedback">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <img src="images/logocard.png" alt="logocard" class="person__company-logo">
+        </div>
+        <div class="person">
+            <div class="person__details">
+                <img src="images/leslie.png" alt="leslie picture" class="person__photo">
+                <p class="person__full-name">Leslie Alexander</p>
+                <p class="person__job-title">Head Officer</p>
+            </div>
+
+            <p class="person__feedback">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <img src="images/logocard.png" alt="logocard" class="person__company-logo">
         </div>
     </div>
-    
+</div>
+
+
+<!-- BLOG -->
+<div class="blog">
+    <h2 class="blog__header">BLOG</h2>
+
+    <div class="blog__articles">
+        <div class="blog__article">
+            <img src="images/eoliennes.png" alt="eoliennes" class="blog__article__image">
+            <p class="blog__article__date">18 Sep 2022</p>
+
+            <h3 class="blog__article__title">Amet minim mollit non deserunt ullamco est sit aliqua</h3>
+            <p class="blog__article__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="blog__article">
+            <img src="images/bateaux.png" alt="ship" class="blog__article__image">
+            <p class="blog__article__date">18 Sep 2022</p>
+
+            <h3 class="blog__article__title">Amet minim mollit non deserunt ullamco est sit aliqua</h3>
+            <p class="blog__article__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="blog__article">
+            <img src="images/businessmen.png" alt="businessmen" class="blog__article__image">
+            <p class="blog__article__date">18 Sep 2022</p>
+
+            <h3 class="blog__article__title">Amet minim mollit non deserunt ullamco est sit aliqua</h3>
+            <p class="blog__article__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </div>
+    <div class="blog__viewall">
+        <a href="#">View all</a>
+    </div>
+</div>
+
+
+<!-- CONTACTBAND -->
+<div class="contactband">
+    <p class="contactband__title">Contact us</p>
+    <a href="#" class="contactband__button">Contact us</a>
+</div>
+
+
+<!-- CONTACT -->
+<div class="contact">
+    <h1 class="contact__title">CONTACT US</h1>
+    <div class="contact__content">
+        <div class="contact__address">
+            <p class="contact__address__street">4517 Washington Ave. Manchester,<br> Kentucky 39495</p>
+            <p class="contact__address__email">alma.lawson@example.com</p>
+            <p class="contact__address__phone">(702) 555-0122</p>
+        </div>
+        <div class="contact__form">
+            <input type="text" placeholder="Full name" class="contact__input">
+            <input type="text" placeholder="Phone Number" class="contact__input">
+            <input type="text" placeholder="Email address" class="contact__input">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter text" class="contact__textarea"></textarea>
+            <button class="contact__button">Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="right">
+    <div class="footer_main">
+        <img src="images/compass.png" alt="compass" class="section1__logo">
+    </div>
+    <div class="footer_bis">
+        <div class="list">
+            <p class="list__title">Industries</p>
+            <a href="#" class="list__link">Energy</a>
+            <a href="#" class="list__link">Construction</a>
+            <a href="#" class="list__link">Consulting</a>
+            <a href="#" class="list__link">Information technology</a>
+            <a href="#" class="list__link">Port Services</a>
+        </div>
+        <div class="list">
+            <p class="list__title">Company</p>
+            <a href="#" class="list__link">About us</a>
+            <a href="#" class="list__link">Portfolio</a>
+            <a href="#" class="list__link">Blog</a>
+            <a href="#" class="list__link">News</a>
+            <a href="#" class="list__link">Contact Us</a>
+            <a href="#" class="list__link">FAQ</a>
+        </div>
+    </div>
+</div>
+    <div class="newsletter_section">
+        <form action="" class="newsletter">
+            <input type="email" placeholder="Enter email adress" class="newsletter__input">
+            <button type="submit" class="newsletter__button">Submit</button>
+        </form>
+        <div class="social">
+            <img src="images/facebook.png" alt="facebook icon" class="social__img">
+            <img src="images/twitter.png" alt="twitter icon" class="social__img">
+            <img src="images/instagram.png" alt="instagram icon" class="social__img">
+        </div>
+    </div>
+    <a href="http://mmi23h08.mmi-troyes.fr/travaux/r312/scss/styles.scss" download="styles.scss" class="footer_download_scss">Télécharger le fichier scss</a>
+</footer>
+
+</div>
+   
+</div>
 </body>
 </html>
